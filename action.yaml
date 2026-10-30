@@ -33,22 +33,22 @@ runs:
     uses: jaxxstorm/action-install-gh-release@6096f2a2bbfee498ced520b6922ac2c06e990ed2 # v2.1.0
     with:
       repo: owenlamont/ryl
-      tag: v0.26.0
-      digest: 011e1395eab5506254ccaaa4e1c126e083a5250ab3e8f4b6a53b717f01c9c027
+      tag: v0.26.1
+      digest: 17b6fe666c19828179c11e15943643c4d9a940dc5d7c1ae3ec0055f81aaa3023
   - name: Install ryl (arm64)
     if: runner.arch == 'ARM64' && runner.os == 'Linux'
     uses: jaxxstorm/action-install-gh-release@6096f2a2bbfee498ced520b6922ac2c06e990ed2 # v2.1.0
     with:
       repo: owenlamont/ryl
-      tag: v0.26.0
-      digest: 4531dd796d2c8e1661be0155eeaacf18861d3abe23b7720ff3369c0fd6a057c0
+      tag: v0.26.1
+      digest: dadeb75d4fc1fcc66d439b18b630d20ad9730eb017c0ecc86a55b11418c6ff51
   - name: Install ryl (macOS)
     if: runner.os == 'macOS'
     uses: jaxxstorm/action-install-gh-release@6096f2a2bbfee498ced520b6922ac2c06e990ed2 # v2.1.0
     with:
       repo: owenlamont/ryl
-      tag: v0.26.0
-      digest: 5f15a725e1d698fca150cf61050187cdcd046882badef5baf619b987c5896936
+      tag: v0.26.1
+      digest: 753d8637baeb38b35e59fae9da94a226d7ae4423d3d26db89ae424d6a64c2792
   - name: Lint yaml w/ ryl
     shell: bash
     run: ryl check "$GITHUB_WORKSPACE"
