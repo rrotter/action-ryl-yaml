@@ -30,21 +30,21 @@ runs:
       exit 1
   - name: Install ryl (x64)
     if: runner.arch == 'X64' && runner.os == 'Linux'
-    uses: jaxxstorm/action-install-gh-release@6096f2a2bbfee498ced520b6922ac2c06e990ed2 # v2.1.0
+    uses: jaxxstorm/action-install-gh-release@25e24d2d23ae098373794ef1d6faecb48ee52da8 # v3.0.0
     with:
       repo: owenlamont/ryl
       tag: v0.26.0
       digest: 011e1395eab5506254ccaaa4e1c126e083a5250ab3e8f4b6a53b717f01c9c027
   - name: Install ryl (arm64)
     if: runner.arch == 'ARM64' && runner.os == 'Linux'
-    uses: jaxxstorm/action-install-gh-release@6096f2a2bbfee498ced520b6922ac2c06e990ed2 # v2.1.0
+    uses: jaxxstorm/action-install-gh-release@25e24d2d23ae098373794ef1d6faecb48ee52da8 # v3.0.0
     with:
       repo: owenlamont/ryl
       tag: v0.26.0
       digest: 4531dd796d2c8e1661be0155eeaacf18861d3abe23b7720ff3369c0fd6a057c0
   - name: Install ryl (macOS)
     if: runner.os == 'macOS'
-    uses: jaxxstorm/action-install-gh-release@6096f2a2bbfee498ced520b6922ac2c06e990ed2 # v2.1.0
+    uses: jaxxstorm/action-install-gh-release@25e24d2d23ae098373794ef1d6faecb48ee52da8 # v3.0.0
     with:
       repo: owenlamont/ryl
       tag: v0.26.0
